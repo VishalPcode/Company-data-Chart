@@ -1,0 +1,109 @@
+
+        #sidebar {
+            max-height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid #ddd;
+            background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        }
+        .index-name {
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .index-name:hover {
+            background-color: #f0f0f0;
+        }
+        #chart-container {
+            padding: 20px;
+            background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%) !important;
+        }
+        #loadingSpinner {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .chart-container{
+        padding: 40px;
+        }
+
+        #indexChart {
+            background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+            border-radius: 5px;
+            padding: 11px;
+        }
+
+        .heading{
+            font-family: poppins;
+        }
+        .index-name{
+            font-family: poppins;
+        }
+
+        #sidebar {
+            border-right: 1px solid #ddd;
+        }
+        
+        #scrollableIndexList {
+            max-height: 85vh; /* Adjust as needed */
+            overflow-y: auto;
+        }
+        
+        .heading {
+            background-color: white;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+.loader {
+    height: 4px;
+    width: 130px;
+    --c:no-repeat linear-gradient(#6100ee 0 0);
+    background: var(--c),var(--c),#d7b8fc;
+    background-size: 60% 100%;
+    animation: l16 3s infinite;
+  }
+  @keyframes l16 {
+    0%   {background-position:-150% 0,-150% 0}
+    66%  {background-position: 250% 0,-150% 0}
+    100% {background-position: 250% 0, 250% 0}
+  }
+
+
+  /* Loader styles */
+.loader {
+    height: 4px;
+    width: 130px;
+    --c: no-repeat linear-gradient(#6100ee 0 0);
+    background: var(--c), var(--c), #d7b8fc;
+    background-size: 60% 100%;
+    animation: l16 3s infinite;
+}
+
+/* Center the loader on the screen */
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: adds a translucent background */
+    z-index: 9999; /* Ensure it's on top of other content */
+}
+
+/* Hide the loading screen by default */
+#loadingScreen.hidden {
+    display: none;
+}
+
+@keyframes l16 {
+    0%   {background-position: -150% 0, -150% 0}
+    66%  {background-position: 250% 0, -150% 0}
+    100% {background-position: 250% 0, 250% 0}
+}
+
+        

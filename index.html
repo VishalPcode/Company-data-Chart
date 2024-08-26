@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Data Visualization</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="loadingScreen">
+            <div class="loader"></div>
+        </div>
+        
+        <div class="row">
+            <!-- Sidebar for index names -->
+            <div id="sidebar" class="col-md-3 col-sm-4 py-3">
+                <h4 class="heading px-2">Index List</h4>
+                <div id="loadingSpinner">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div id="scrollableIndexList">
+                    <div id="indexList"></div>
+                </div>
+            </div>
+            
+            <!-- Chart area -->
+            <div id="chart-container" class="col-md-9 col-sm-8 py-3 ">
+                <h4 class="heading px-2">Index Data</h4>
+                <canvas id="indexChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS, Chart.js, and Papa Parse -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="App.js"></script>
+</body>
+</html>
